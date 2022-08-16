@@ -83,7 +83,7 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc)
 ```
 :star2::star2::star2:
 
-==Congratulations!! Kernel is compiled successfully and located at arch/arm64/boot directory==
+**_Congratulations!! Kernel is compiled successfully and located at arch/arm64/boot directory_**
 
 10. Check the boot image
 ```
@@ -168,7 +168,8 @@ find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../../rootfs.img
 ```
 :star2::star2::star2:
 
-==Congratulations!! rootfs Image is created successfully==
+**_Congratulations!! rootfs Image is created successfully_**
+
 7. Back to the parent directory
 ```
 cd ../../
@@ -192,6 +193,7 @@ qemu-system-aarch64 -M virt -cpu cortex-a53 -smp 2 -m 4096M -kernel linux-4.19.1
 
 ENJOY!!!
 
+:star2::star2::star2:
 ## Authors
 
 - [@pkchowdhury](https://www.github.com/pkchowdhury)
