@@ -183,7 +183,11 @@ dd if=/dev/zero of=nvme.img bs=1M count=4096
 ```
 qemu-system-aarch64 -M virt -cpu cortex-a53 -smp 2 -m 4096M -kernel linux-4.19.18/arch/arm64/boot/Image -nographic -append "console=ttyAMA0 rdinit=linuxrc" -initrd rootfs.img
 ```
+** Close the Qemu Environment **
+```
+ctrl + A + X
 
+```
 ### Build the system with NVME
 ```
 qemu-system-aarch64 -M virt -cpu cortex-a53 -smp 2 -m 4096M -kernel linux-4.19.18/arch/arm64/boot/Image -nographic -append "console=ttyAMA0 rdinit=linuxrc" -initrd rootfs.img -drive file=nvme.img,format=raw,if=none,id=nvme -device nvme,serial=deadbeef,drive=nvme
