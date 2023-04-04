@@ -92,7 +92,7 @@ ls -lah arch/arm64/boot/Image
 Back to parent directory
 
 ```
-cd../
+cd ../
 ```
 ## Build Busybox
  1. Download Busybox 1.35.0
